@@ -1,2 +1,1 @@
-# learn-pytorch
-I like doms eraser
+`torch.inference_mode()` turns off a bunch of things (like gradient tracking, which is necessary for training but not for inference) to make forward-passes (data going through the forward() method) faster.
