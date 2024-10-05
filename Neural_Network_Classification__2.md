@@ -1,7 +1,7 @@
 
 ![Screenshot 2024-10-05 082230](https://github.com/user-attachments/assets/bac62a0c-50c5-4fc0-b41c-170f55b8c493)
 
-# Turn Data to tensor
+## Turn Data to tensor
 ```
 # Turn data into tensors
 # Otherwise this causes issues with computations later on
