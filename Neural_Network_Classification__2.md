@@ -9,7 +9,7 @@ import torch
 X = torch.from_numpy(X).type(torch.float)
 y = torch.from_numpy(y).type(torch.float)
 ```
-##Test train split
+## Test train split
 ```
 # Split data into train and test sets
 from sklearn.model_selection import train_test_split
