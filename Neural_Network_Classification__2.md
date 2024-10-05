@@ -31,3 +31,15 @@ from torch import nn
 device = "cuda" if torch.cuda.is_available() else "cpu"
 device
 ```
+## Example neural network structure
+```
+class circleModel(nn.Module):
+  def __init__(self):
+    super().__init__()
+    self.layer1 = nn.Linear(in_features=2, out_features=5)
+    self.layer2 = nn.Linear(in_features=5, out_features=1)
+  
+  def forward(self,x):
+    return self.layer2(self.layer1(x))
+```
+`nn.Linear` is basic linear regression that looks like this y = x*W + b
