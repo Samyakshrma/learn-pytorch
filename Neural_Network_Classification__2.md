@@ -21,3 +21,13 @@ X_train, X_test, y_train, y_test = train_test_split(X,
 
 len(X_train), len(X_test), len(y_train), len(y_test)
 ```
+## Cpu default gpu if available
+```
+# Standard PyTorch imports
+import torch
+from torch import nn
+
+# Make device agnostic code
+device = "cuda" if torch.cuda.is_available() else "cpu"
+device
+```
