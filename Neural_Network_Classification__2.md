@@ -43,3 +43,12 @@ class circleModel(nn.Module):
     return self.layer2(self.layer1(x))
 ```
 `nn.Linear` is basic linear regression that looks like this y = x*W + b
+
+# Loss Functions 
+![Screenshot 2024-10-05 134445](https://github.com/user-attachments/assets/005d2d19-6a0b-4d78-954f-0d689ca789e9)
+
+PyTorch has two binary cross entropy implementations:
+
+`torch.nn.BCELoss()` - Creates a loss function that measures the binary cross entropy between the target (label) and input (features).
+`torch.nn.BCEWithLogitsLoss()` - This is the same as above except it has a sigmoid layer (`nn.Sigmoid`) built-in (we'll see what this means soon).
+
